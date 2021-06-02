@@ -1,9 +1,22 @@
 "use strict";
 
-const category = 'toys';
+const nuberOfFilms = +prompt('Сколько фильмов Вы уже посмотрели?', '');
+const PersonalMovieDB = {
+cont: nuberOfFilms,
+movies: {},
+actors: {},
+genres: [],
+privat: false
 
-console.log(`https://someurl.com/${category}/5`);
+};
 
-const user = 'Dima';
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+b = prompt('На сколько оцените его?',  ''),
+c = prompt('Один из последних просмотренных фильмов?', ''),
+d = prompt('На сколько оцените его?',  '');
 
-alert(`Привет, ${user}`);
+
+PersonalMovieDB.movies[a] = b;
+PersonalMovieDB.movies[c] = d;
+
+console.log(PersonalMovieDB);
